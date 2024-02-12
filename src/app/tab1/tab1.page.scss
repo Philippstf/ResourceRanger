@@ -1,0 +1,56 @@
+ion-header {
+  ion-toolbar {
+    --background: transparent; 
+    justify-content: center; 
+    ion-title {
+      text-align: center; 
+      color: white; 
+      font-family: 'Arapey', serif; 
+      font-size: 2em; 
+    }
+  }
+}
+
+ion-content {
+  --background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+ion-content p {
+  color: white;
+  text-align: center;
+  font-family: 'Arapey', serif;
+  font-size: 1.2em; 
+}
+
+.account-form {
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Arapey', serif;
+
+  ion-button {
+    --border-radius: 20px; 
+    --background: #ff6861; 
+    --color: white; 
+    --font-family: 'Arial', sans-serif; 
+    --height: 60px; 
+    --font-size: 1.2em; 
+    width: 80%; 
+    margin: 20px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ion-button.delete-button {
+    --background: #808080; 
+  }
+
+  ion-icon {
+    font-size: 1.5em; 
+    margin-right: 8px; 
+  }
+}

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Meine Favoriten</ion-title>
+    <ion-button slot="end" [class.selected]="currentSortMode === 'date'" (click)="sortEventsByDate()" type="submit" class="ion-margin-top red-button"><ion-icon slot="start" name="time-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="savedEvents.length === 0" class="no-favorites-message">
+    Hier  werden deine favorisierten
+    Veranstaltungen stehen.
+    
+    Gehe hierfür auf eine Veranstaltung und 
+    drücke auf das <ion-icon name="heart"></ion-icon> 
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let event of savedEvents">
+      <ion-label>
+        <h2>{{ event.eventname }}</h2>
+        <p>{{ event.location }}</p>
+        <p>{{ event.date_time | date: 'dd.MM.yyyy, HH:mm' }} Uhr</p>
+      </ion-label>
+      <ion-icon name="heart" slot="end" class="heart-icon-filled" (click)="removeEvent(event); $event.stopPropagation();"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

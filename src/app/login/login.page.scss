@@ -1,0 +1,222 @@
+ion-header {
+  ion-toolbar {
+    --background: transparent; 
+    justify-content: center; 
+    ion-title {
+      text-align: center; 
+      color: white; 
+      font-family: 'Arapey', serif; 
+      font-size: 1.5em; 
+    }
+  }
+}
+
+ion-content {
+  --background: black;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: auto;
+  
+  
+    @media (min-width: 1200px) {
+        margin-top: 10px; 
+    }
+
+  ion-item {
+    position: relative;
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+    --border-radius: 8px; 
+    --background: white; 
+    --border-color: black;
+    --border-style: solid;
+    --border-width: 1px;
+    --margin-bottom: 10px; 
+  }
+
+  ion-input[type="text"] {
+    --padding-start: 16px; 
+    --font-family: 'Arial', sans-serif;
+    --color: black;
+  }
+
+  ion-input[type="password"] {
+    --padding-start: 16px; 
+    --color: #000; 
+  }
+  
+  ion-button {
+    --border-radius: 20px; 
+    --background: #ff6861; 
+    --color: white; 
+    --font-family: 'Arial', sans-serif; 
+    --height: 50px; 
+    --font-size: 1.1em; 
+    width: 50%;  
+    max-width: 200px; 
+    margin: 20px auto; 
+    display: block;
+  }
+
+  ion-icon {
+    color: black; 
+  }
+}
+
+.password-forget {
+  font-size: 0.9rem;
+  font-family: 'Arapey', serif;
+  color: #007bff; 
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  --padding-bottom: 20px; 
+}
+
+.error-message {
+  color: #ff6861;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+
+  
+    @media (min-width: 1200px) { 
+        margin: 1px; 
+    }
+}
+
+.logo {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 20px; 
+  
+  ion-img {
+      width: 20vw; 
+      height: auto;
+  }
+
+  @media (max-width: 600px) { //
+      ion-img {
+          width: 30vw; 
+      }
+  }
+
+ 
+  @media (min-width: 1200px) {
+      ion-img {
+          width: 10vw; 
+      }
+  }
+
+  
+    @media (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
+}
+
+// White Mode:
+// ion-header {
+//   ion-toolbar {
+//     --background: transparent; 
+//     justify-content: center; 
+//     ion-title {
+//       text-align: center; 
+//       color: black; 
+//       font-family: 'Arapey', serif; 
+//       font-size: 1.5em; 
+//     }
+//   }
+// }
+
+// ion-content {
+//   --background: #ffffff;
+// }
+
+// .login-form {
+//   max-width: 400px;
+//   margin: auto;
+//   margin-top: 20%; 
+
+//   ion-item {
+//     position: relative;
+//     --padding-start: 0;
+//     --padding-end: 0;
+//     --inner-padding-end: 0;
+//     --inner-padding-start: 0;
+//     --border-radius: 8px; 
+//     --background: #ffffff; 
+//     --border-color: #cccccc;
+//     --border-style: solid;
+//     --border-width: 1px;
+//     --margin-bottom: 10px; 
+//   }
+
+//   ion-input[type="text"] {
+//     --padding-start: 16px; 
+//     --font-family: 'Arial', sans-serif;
+//     --color: #000;
+//   }
+
+//   ion-input[type="password"] {
+//     --padding-start: 16px; 
+//     --color: #000; 
+//   }
+  
+//   ion-button {
+//     --border-radius: 20px; 
+//     --background: #ff6861; 
+//     --color: black; 
+//     --font-family: 'Arial', sans-serif; 
+//     --height: 50px; 
+//     --font-size: 1.1em; 
+//     width: 50%; 
+//     max-width: 200px; 
+//     margin: 20px auto; 
+//     display: block; 
+//   }
+
+//   ion-icon {
+//     color: #000000; 
+//   }
+// }
+
+// .password-forget {
+//   font-size: 0.9rem;
+//   font-family: 'Arapey', serif;
+//   color: #61dfff; 
+//   text-align: center;
+//   margin-top: 15px;
+//   cursor: pointer;
+//   --padding-bottom: 20px; 
+// }
+
+// .error-message {
+//   color: #ff6861;
+// }
+
+// .login-container {
+//   max-width: 400px;
+//   margin: auto;
+//   text-align: center;
+// }
+
+// .logo {
+//   max-width: 100%; 
+//   height: auto; 
+//   margin-bottom: 20px; 
+
+// }

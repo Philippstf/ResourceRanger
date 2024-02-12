@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Einstellungen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div>
+    <p>Der Eventatlas zeigt dir immer dein bestes Event - egal wo do gerade bist!</p>
+  </div>
+  <div class="account-form">
+
+    <ion-text>
+      <p>Möchstest du deinen Account löschen?</p>
+    </ion-text>
+    <form (submit)="deleteAccount()">
+      <ion-button expand="block" class="ion-margin-top delete-button" (click)="deleteAccount()">
+        <ion-icon name="trash-bin" slot="start"></ion-icon>
+      </ion-button>
+    </form>
+    <ion-text>
+      <p>Möchstest du dich Ausloggen?</p>
+    </ion-text>
+    <form (submit)="logOut()">
+      <ion-button expand="block" type="submit" class="ion-margin-top logout-button">Logout</ion-button>
+    </form>
+  </div>
+</ion-content>

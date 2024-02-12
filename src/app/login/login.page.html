@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="login-logo">
+    <ion-img src="assets/icon.png"></ion-img>
+  </div>
+  <div class="login-form">
+    <form (submit)="login()">
+      <ion-item>
+        <ion-label position="stacked">E-Mail</ion-label>
+        <ion-input type="text" placeholder="E-Mail" [(ngModel)]="username" name="username" required></ion-input>
+        <ion-icon name="person-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Passwort</ion-label>
+        <ion-input type="password" placeholder="Passwort" [(ngModel)]="password" name="password" required></ion-input>
+        <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-button expand="block" type="submit" class="ion-margin-top" [disabled]="!password">Login</ion-button>
+      <ion-text class="password-forget" (click)="forgotPassword()">
+        <p>Passwort vergessen?</p>
+      </ion-text>
+        <p *ngIf="passwordIncorrect" class="error-message">Passwort fehlerhaft. Bitte erneut versuchen.</p>
+        <ion-button expand="block" class="ion-margin-top" (click)="createAccount()">Account erstellen</ion-button>
+    </form>
+  </div>
+</ion-content>
+
